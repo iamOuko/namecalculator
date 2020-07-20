@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Name Calculator</title>
+    <link rel="stylesheet" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="white-text mb-0 py-5 font-weight-bold">Name Finder</h1>
+            <p>This is an app that helps one know his or her Akan name by placing the date of birth and gender.
+                This is done by filling the form below:</p>
+        </div>
+
+        <div class="card">
+            <div class="row d-flex justify-content-center">
+                <h3 class="white-text mb-0 py-5 font-weight-bold">Fill Form</h3>
+            </div>
+            <form class="form-horizontal" onsubmit="submitted(); return false">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="year">Year:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="year">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="month">Month:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="month">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="day">Day:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="day">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label for="gender"> Select Gender:</label>
+                            <select id="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="button" type="submit" class="btn btn-outline-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
